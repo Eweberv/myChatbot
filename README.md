@@ -22,5 +22,5 @@ sudo mongod
 
 ### Display Diagram tree
 ```
-Go to draw.io -> open -> Diagram Chatbot Pandacola.xml
+Go to https://draw.io -> open -> Diagram Chatbot Pandacola.xml
 ```
