@@ -1,0 +1,179 @@
+{
+  "appName": "Assistant Pandacola",
+  "welcomeMessage": "Bonjour, que puis-je faire pour vous?",
+  "scopes": [
+    {
+      "name": "whatCanIDo",
+      "type": "selectAnswer",
+      "text": "Que puis-je faire pour vous?",
+      "answers": [
+        [
+          "Je ne trouve pas un article sur le site",
+          "articleIntrouvable"
+        ],
+        [
+          "J'ai un problême concernant un article",
+          "problemeArticle"
+        ],
+        [
+          "J'aimerais accéder à mes factures",
+          "factures"
+        ],
+        [
+          "J'ai une question",
+          "questions"
+        ],
+        [
+          "J'aimerais donner mon avis",
+          "avisType"
+        ],
+        [
+          "Nous contacter",
+          "contact"
+        ]
+      ]
+    },
+    {
+      "name": "articleIntrouvable",
+      "type": "text",
+      "text": "Vous pouvez nous contacter au 06 01 14 43 11 nous pourrons convenir d'un devis"
+    },
+    {
+      "name": "problemeArticle",
+      "type": "selectAnswer",
+      "answers": [
+        [
+          "Article défectueux",
+          "defectueux"
+        ],
+        [
+          "J'ai reçu le mauvais article",
+          "mauvaisArticle"
+        ]
+      ]
+    },
+    {
+      "name": "defectueux",
+      "type": "text",
+      "text": "Texte pour le articles défectueux"
+    },
+    {
+      "name": "mauvaisArticle",
+      "type": "text",
+      "text": "Texte pour le mauvais article"
+    },
+    {
+      "name": "factures",
+      "type": "text",
+      "text": "Texte pour voir ses factures"
+    },
+    {
+      "name": "questions",
+      "type": "selectAnswer",
+      "answers": [
+        [
+          "Pandacola, c'est quoi?",
+          "pandacolaDescription"
+        ],
+        [
+          "Comment fonctionne le module de personnalisation?",
+          "infoCustomisation"
+        ],
+        [
+          "Quel sont les moyens de payement disponibles?",
+          "infoPayement"
+        ],
+        [
+          "Le prix indiqué sur le site ne correspond pas au prix affiché lors de l'ajout au panier",
+          "infoPanier"
+        ]
+      ]
+    },
+    {
+      "name": "pandacolaDescription",
+      "type": "text",
+      "text": "Description de Pandacola"
+    },
+    {
+      "name": "infoCustomisation",
+      "type": "text",
+      "text": "Description du module de customisation"
+    },
+    {
+      "name": "infoPayement",
+      "type": "text",
+      "text": "Description des différents moyens de payement disponibles"
+    },
+    {
+      "name": "infoPanier",
+      "type": "text",
+      "text": "InfoPanier text"
+    },
+    {
+      "name": "contact",
+      "type": "text",
+      "text": "Message pour contacter le site"
+    },
+    {
+      "name": "avisType",
+      "type": "selectAnswer",
+      "answers": [
+        ["Un avis général", "avis"],
+        ["Un autre avis", "avis"]
+      ]
+    },
+    {
+      "name": "avis",
+      "type": "selectAnswer",
+      "answers": [
+        [
+          "Négatif",
+          "avisAnswer"
+        ],
+        [
+          "Plutôt négatif",
+          "avisAnswer"
+        ],
+        [
+          "Plutôt positif",
+          "avisAnswer"
+        ],
+        [
+          "Positif",
+          "avisAnswer"
+        ]
+      ]
+    },
+    {
+      "name": "avisAnswer",
+      "type": "text",
+      "text": "Merci pour votre retour"
+    },
+    {
+      "name": "allGood",
+      "text": "Avez-vous besoin d'autre chose?",
+      "type": "selectAnswer",
+      "answers": [
+        [
+          "Oui",
+          "whatCanIDo"
+        ],
+        [
+          "Non",
+          "end"
+        ]
+      ]
+    },
+    {
+      "name": "oui",
+      "type": "text",
+      "text": "",
+      "next": "whatCanIDo"
+    },
+    {
+      "name": "end",
+      "type": "text",
+      "text": "J'espère avoir répondu à vos attentes et vous souhaite une bonne journée 🐼"
+    }
+  ]
+}
