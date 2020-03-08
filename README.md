@@ -12,7 +12,7 @@ npm run serve (in /src)
 
 ### Start Node server
 ```
-npm run start (in /server)
+nodemon app.js (in /server)
 ```
 
 ### Start MongoDb
