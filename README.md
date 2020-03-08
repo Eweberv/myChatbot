@@ -19,3 +19,8 @@ npm run start (in /server)
 ```
 sudo mongod
 ```
+
+### Display Diagram tree
+```
+Go to draw.io -> open -> Diagram Chatbot Pandacola.xml
+```
